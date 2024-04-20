@@ -1,15 +1,19 @@
 import { useState } from "react";
 
+interface Props {
+    items: string[];
+    heading: string;
+}
+
 //  PascalConvention
-function ListGroup() {
-    let items = ['Edinburgh', 'Glasgow', 'Aderdeen', 'North Berwick',];
+function ListGroup({ items, heading }: Props) {
     const [selectedIndex, setSelectedIndex] = useState(-1);
 
     //  Event handler
 
     return (
         <>
-            <h1>List</h1>
+            <h1>{heading}</h1>
             {items.length === 0 && <p>No item found</p>}
             <ul className="list-group">
                 {items.map((item, index) => (
