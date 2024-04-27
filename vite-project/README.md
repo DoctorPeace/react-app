@@ -1,9 +1,3 @@
-# Dependancies
-create app using vite:
-npm create vite@latest
-select React then TypeScript
-npm i -D @types/react
-
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
